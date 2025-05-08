@@ -1,0 +1,139 @@
+/* Main contact section */
+#contact {
+    margin-top: 500px; /* Increased to create enough space from previous section */
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Ensures the section above gives space */
+  .testimonial-section {
+    margin-bottom: 100px; /* Add this if not already present */
+  }
+  
+  /* Contact container */
+  .contact__container {
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    user-select: none;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Flex layout for form */
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Style for each form field */
+  .contact__field {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: center;
+    align-items: top;
+  }
+  
+  /* Label styles */
+  .contact__field label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color--light);
+  }
+  
+  /* Input & Textarea Styles */
+  .contact__field input,
+  .contact__field textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .contact__field input:focus,
+  .contact__field textarea:focus {
+    outline: none;
+    border-color: var(--color--primary);
+    box-shadow: 0 0 0 2px rgba(255, 180, 0, 0.3);
+  }
+  
+  /* Icon inside the form fields */
+  .contact__icon {
+    font-size: 1.2rem;
+    color: var(--color--primary);
+  }
+  
+  /* Button styles */
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--color--primary);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+  }
+  
+  .btn:hover {
+    background-color: var(--color--primary-dark);
+  }
+  
+  /* Success message */
+  .contact__success {
+    font-size: 1.2rem;
+    color: green;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 1024px) {
+    .contact__container {
+      width: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact__container {
+      width: 80%;
+    }
+  
+    .contact__form {
+      gap: 1.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .contact__container {
+      width: var(--container--width-sm);
+      padding: 1rem;
+    }
+  
+    .contact__field {
+      padding: 0.75rem;
+    }
+  
+    .contact__field input,
+    .contact__field textarea {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+  
